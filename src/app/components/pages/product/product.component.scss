@@ -1,0 +1,10 @@
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-item > * { /* все элементы, которые находятся на первом уровне внутри product-item */
+  display: block;
+  margin-top: 10px;
+}

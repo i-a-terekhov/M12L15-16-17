@@ -1,0 +1,173 @@
+[33mcommit c71152139bb573f2ca0f7f03d33ea5d01f1c3f25[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Fri May 1 08:56:04 2026 +0400
+
+    инъекция модульной зависимости в компонентную
+
+[33mcommit 3c7ddb666649d367e6ff079998464df731933bd6[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Fri May 1 08:41:07 2026 +0400
+
+    создание инъекции для компонента
+
+[33mcommit bc2c41c9a3b003911fa872a48e4619adc226e62f[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Fri May 1 08:21:29 2026 +0400
+
+    создание глобальной инъекции для всех компонентов
+
+[33mcommit 6f98e36ff3b7fb47819df5a7b083f744aa4ee6df[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Thu Apr 30 12:51:53 2026 +0400
+
+    изменили инъекцию сервиса на уровень провайдинга component
+
+[33mcommit 9a9f6f5bfb042e6ae15e63525b8a673a160533a9[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Thu Apr 30 12:47:53 2026 +0400
+
+    сделали инъекцию сервиса с уровнем провайдинга root (это по умолчанию). начало M12L08
+
+[33mcommit 2872219162693a0cf86ad0ebe746d696c0558a11[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Thu Apr 30 08:08:31 2026 +0400
+
+    применение пайпов в структурных дерективах и при получении асинхронных данных
+
+[33mcommit 3aefba6e8b9320c9e562a097ea412b91944eeb18[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Thu Apr 30 07:51:29 2026 +0400
+
+    создание своего пайпа, выделяющего набор слов, переданного в пайпе
+
+[33mcommit 4d4a5afcf6ace3b9f2c49a1ef466a6b18e6f1453[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Thu Apr 30 05:05:08 2026 +0400
+
+    создание своего пайпа, выделяющего куриные слова заглавными буквами
+
+[33mcommit 2a4aaa1de86baaec826c2e8483fbdd2e6451d6e9[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Thu Apr 30 04:42:25 2026 +0400
+
+    использование встроенных пайпов и подключение Ru локали
+
+[33mcommit 5c755556dcd297a9b3a4c74c39a4348f18b7ff63[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Wed Apr 29 20:53:42 2026 +0400
+
+    удаляем лишние изменения. начало M12L07
+
+[33mcommit ba0509e9dca71d93bd2ca18096d324975d7ec5af[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Wed Apr 29 11:50:00 2026 +0400
+
+    создание кастомной структурной директивы
+
+[33mcommit 27c03257bc6d816ffad2f8b0bd3289dcf6486354[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Wed Apr 29 11:24:39 2026 +0400
+
+    вариант организации подстановки блока по условию
+
+[33mcommit 5d7484f833c4ef2e8b05da90075cb983619123ea[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Wed Apr 29 11:09:21 2026 +0400
+
+    ngIf - изменение шаблона по условию
+
+[33mcommit 56534e8869ca85eb098542e82744913edd1ab5cd[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Wed Apr 29 10:56:51 2026 +0400
+
+    hostbinding - связывание элемента с переменной в директиве
+
+[33mcommit 999dab4f184895dde78a3e238aaee33ea20d1711[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Tue Apr 28 21:05:05 2026 +0400
+
+    опциональная передача данных в директиву
+
+[33mcommit 02bfc9b7533e30a3d0e621f84a4693f429c65959[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Tue Apr 28 20:49:04 2026 +0400
+
+    использование директивы для создания и стилизации элемента по событию
+
+[33mcommit 3f4843800c994279eb96c49c7327c9bd289e3eaf[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Tue Apr 28 19:00:10 2026 +0400
+
+    применение рендерера Renderer2
+
+[33mcommit fff1ddc3b5bc3085dd16151889b7824f3e04694e[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Tue Apr 28 13:53:26 2026 +0400
+
+    создание кастомной директивы
+
+[33mcommit 2980e985d168e7a5c00e3b1967f82b8ef480448e[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Mon Apr 27 22:02:45 2026 +0400
+
+    удаляем лишние изменения. начало M12L06
+
+[33mcommit 5301a4b2091b96831894201f55f820040adae259[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Mon Apr 27 17:22:10 2026 +0400
+
+    жизненный цикл компонентов. хуки
+
+[33mcommit fdb531770c9d4f8775a613f2424ecd63befdeefc[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Mon Apr 27 14:50:11 2026 +0400
+
+    возврат инкапусяции по умолчанию
+
+[33mcommit 2095b512bd730a49c59473b730e11955d599ad08[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Mon Apr 27 14:47:45 2026 +0400
+
+    инкапсуляция стилей компонента
+
+[33mcommit b3b73746d5906b6c1dd3b2973c7ba5c3e71a7517[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Mon Apr 27 14:27:56 2026 +0400
+
+    деректива @ContentChild
+
+[33mcommit 95122c3caaaf3d658fdeee626aff5f0b0fca1d47[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Mon Apr 27 14:18:51 2026 +0400
+
+    контентная проекция
+
+[33mcommit 9562343f8f92e6115dbe320ae986a8b0236788a8[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Sun Apr 26 18:57:42 2026 +0400
+
+    передача данных через ViewChild
+
+[33mcommit 57d2505a62ce586e91b2e8cf7a182d13a7e3a6eb[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Sun Apr 26 18:28:28 2026 +0400
+
+    +комментарии к написанному перед рефакторингом
+
+[33mcommit b42ad5e33e58673543b43b8cf27af86f7e512744[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Sun Apr 26 09:38:06 2026 +0400
+
+    передача данных между компонентами через локальную переменную?
+
+[33mcommit 0d0827ccba6f7b76ac43a84b608636ac773177fe[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Sun Apr 26 06:53:09 2026 +0400
+
+    clone M12L03_double
+
+[33mcommit f52082e05d7f94fd3457a3d46c483a472de797a1[m
+Author: Ivan Terekhov <for-spam32@yandex.ru>
+Date:   Sun Apr 26 06:43:58 2026 +0400
+
+    initial commit
