@@ -10,12 +10,10 @@ import { CoolInputDirective } from './directives/cool-input.directive';
 import { IsChickenDirective } from './directives/is-chicken.directive';
 import { ChickenDescriptionPipe } from './pipes/chicken-description.pipe';
 import { ChickenProductsPipe } from './pipes/chicken-products.pipe';
-import { MainComponent } from './components/pages/main/main.component';
-import { AboutComponent } from './components/pages/about/about.component';
 import {ProductService} from "./services/product.service";
-import { OrderComponent } from './components/pages/order/order.component';
+import { OrderComponent } from './views/order/order.component';
 import {HttpClientModule} from "@angular/common/http";
-import {ProductsModule} from "./components/products.module";
+import {ProductsModule} from "./views/products/products.module";
 import {CoreModule} from "./core/core.module";
 
 @NgModule({
@@ -27,8 +25,6 @@ import {CoreModule} from "./core/core.module";
     IsChickenDirective,
     ChickenDescriptionPipe,
     ChickenProductsPipe,
-    MainComponent,
-    AboutComponent,
     OrderComponent,
   ],
   imports: [
