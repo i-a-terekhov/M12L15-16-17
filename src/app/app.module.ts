@@ -14,9 +14,9 @@ import { MainComponent } from './components/pages/main/main.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import {ProductService} from "./services/product.service";
 import { OrderComponent } from './components/pages/order/order.component';
-import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
-import {AuthInterceptor} from "./auth/auth.interceptor";
-import {ProductsModule} from "./components/pages/products.module";
+import {HttpClientModule} from "@angular/common/http";
+import {ProductsModule} from "./components/products.module";
+import {CoreModule} from "./core/core.module";
 
 @NgModule({
   declarations: [
@@ -36,15 +36,11 @@ import {ProductsModule} from "./components/pages/products.module";
     FormsModule,
     HttpClientModule,
     ProductsModule,
+    CoreModule,
     AppRoutingModule,  // AppRoutingModule должен быть подключен позже остальных модулей
   ],
   providers: [
     ProductService,
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: AuthInterceptor,
-      multi: true,
-    }
   ],
   bootstrap: [AppComponent]
 })
