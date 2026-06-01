@@ -12,8 +12,10 @@ import { ChickenDescriptionPipe } from './pipes/chicken-description.pipe';
 import { ChickenProductsPipe } from './pipes/chicken-products.pipe';
 import {ProductService} from "./services/product.service";
 import {HttpClientModule} from "@angular/common/http";
-import {ProductsModule} from "./views/products/products.module";
 import {CoreModule} from "./core/core.module";
+import {ProductsModule} from "./views/products/products.module";
+import {HomeModule} from "./views/home/home.module";
+import {OrderModule} from "./views/order/order.module";
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import {CoreModule} from "./core/core.module";
     FormsModule,
     HttpClientModule,
     ProductsModule,
+    HomeModule,
+    OrderModule,
     CoreModule,
     AppRoutingModule,  // AppRoutingModule должен быть подключен позже остальных модулей
   ],
