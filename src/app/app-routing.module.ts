@@ -8,9 +8,8 @@ import {AuthGuard} from "./core/auth/auth.guard";
 const routes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'products/:id', component: ProductComponent },
-  { path: 'order', component: OrderComponent, canActivate: [AuthGuard] },
-  // { path: '**', component: MainComponent }, /* компонент, который сработает если страница не найдена (обычно 404) */
-  { path: 'pizzas', redirectTo: 'products' },           /* а это переадресация (например, если страница сменила адрес) */
+  { path: 'pizzas', redirectTo: 'products' },
+  { path: '**', redirectTo: '' },
 ];
 
 @NgModule({

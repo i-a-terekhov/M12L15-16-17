@@ -11,7 +11,6 @@ import { IsChickenDirective } from './directives/is-chicken.directive';
 import { ChickenDescriptionPipe } from './pipes/chicken-description.pipe';
 import { ChickenProductsPipe } from './pipes/chicken-products.pipe';
 import {ProductService} from "./services/product.service";
-import { OrderComponent } from './views/order/order.component';
 import {HttpClientModule} from "@angular/common/http";
 import {ProductsModule} from "./views/products/products.module";
 import {CoreModule} from "./core/core.module";
@@ -25,7 +24,6 @@ import {CoreModule} from "./core/core.module";
     IsChickenDirective,
     ChickenDescriptionPipe,
     ChickenProductsPipe,
-    OrderComponent,
   ],
   imports: [
     BrowserModule,
