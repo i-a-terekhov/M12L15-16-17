@@ -2,6 +2,8 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {CartService} from "../../../shared/services/cart.service";
 import {from, map, Observable, Subject, Subscription} from "rxjs";
 
+declare var bootstrap: any; // декларирование переменной bootstrap для обхода ограничений TS
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -52,6 +54,9 @@ export class MainComponent implements OnInit, OnDestroy {
   private subscription: Subscription | null = null;
 
   ngOnInit() {
+    const myModalAlternative = new bootstrap.Modal('#myModal', {});
+    myModalAlternative.show();
+
     this.subscription = this.subject        // у subject такой же принцип работы подписки, что и у observable
       .subscribe(
         {
