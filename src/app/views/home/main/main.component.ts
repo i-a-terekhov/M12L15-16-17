@@ -10,10 +10,11 @@ import {PopupComponent} from "../../../shared/components/popup/popup.component";
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit, OnDestroy, AfterViewInit {
+
   // private observable: Observable<number>;
   private subject: Subject<number>
 
-  constructor(public cartService: CartService, private modalService: NgbModal) {
+  constructor(public cartService: CartService) {
     this.subject = new Subject<number>();  // в subject сразу НЕ передается функция
     let count = 0;
     const interval = setInterval(() => {
@@ -51,9 +52,6 @@ export class MainComponent implements OnInit, OnDestroy, AfterViewInit {
 
   private subscription: Subscription | null = null;
 
-  // @ViewChild('popup')
-  // popup!: TemplateRef<ElementRef>;
-
   ngOnInit() {
     // const myModalAlternative = new bootstrap.Modal('#myModal', {});
     // myModalAlternative.show();
@@ -71,11 +69,11 @@ export class MainComponent implements OnInit, OnDestroy, AfterViewInit {
       );
   }
 
-  ngAfterViewInit() {
-    const modalRef = this.modalService.open(PopupComponent, {});
-    modalRef.componentInstance.data = 'Main Component';
+  @ViewChild(PopupComponent)
+  private popupComponent!: PopupComponent;
 
-    // this.modalService.open(this.popup, {})
+  ngAfterViewInit() {
+    this.popupComponent.open();
   }
 
   ngOnDestroy() {

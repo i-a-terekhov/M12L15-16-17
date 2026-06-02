@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
 import {PopupComponent} from "../../../shared/components/popup/popup.component";
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 
@@ -13,11 +13,10 @@ export class AboutComponent {
 
   ngOnInit() {
   }
+  @ViewChild(PopupComponent)
+  private popupComponent!: PopupComponent;
 
   ngAfterViewInit() {
-    const modalRef = this.modalService.open(PopupComponent, {});
-    modalRef.componentInstance.data = 'About Component';
-
-    // this.modalService.open(this.popup, {})
+    this.popupComponent.open();
   }
 }
