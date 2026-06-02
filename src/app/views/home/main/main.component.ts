@@ -1,6 +1,7 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, ElementRef, OnDestroy, OnInit, TemplateRef} from '@angular/core';
 import {CartService} from "../../../shared/services/cart.service";
 import {from, map, Observable, Subject, Subscription} from "rxjs";
+import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
   selector: 'app-main',
@@ -8,12 +9,10 @@ import {from, map, Observable, Subject, Subscription} from "rxjs";
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit, OnDestroy {
-
-
   // private observable: Observable<number>;
   private subject: Subject<number>
 
-  constructor(public cartService: CartService) {
+  constructor(public cartService: CartService, private modalService: NgbModal) {
     this.subject = new Subject<number>();  // в subject сразу НЕ передается функция
     let count = 0;
     const interval = setInterval(() => {
@@ -52,6 +51,7 @@ export class MainComponent implements OnInit, OnDestroy {
   private subscription: Subscription | null = null;
 
   ngOnInit() {
+
     // const myModalAlternative = new bootstrap.Modal('#myModal', {});
     // myModalAlternative.show();
 
@@ -72,7 +72,9 @@ export class MainComponent implements OnInit, OnDestroy {
     this.subscription?.unsubscribe();  // отписка в subject такая же, как в observable
   }
 
-  test() {
+  test(popup: TemplateRef<ElementRef>) {
+    this.modalService.open(popup, {})
+
     this.subject
       .pipe(
         map((number) => {
@@ -80,7 +82,7 @@ export class MainComponent implements OnInit, OnDestroy {
         })
       )
       .subscribe((param: string) => {
-      console.log('subscriber 2:', param);
-    });
+        console.log('subscriber 2:', param);
+      });
   }
 }
