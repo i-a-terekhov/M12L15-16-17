@@ -1,7 +1,6 @@
 import {Component} from '@angular/core';
-import {ProductType} from "../../../types/product.type";
-import {ProductService} from "../../../services/product.service";
-import {CartService} from "../../../services/cart.service";
+import {ProductType} from "../../../../types/product.type";
+import {ProductService} from "../../../shared/services/product.service";
 import {Router} from "@angular/router";
 import {HttpClient} from "@angular/common/http";
 import {catchError, map, of, retry, tap, throwError} from "rxjs";
