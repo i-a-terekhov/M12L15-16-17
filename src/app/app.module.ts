@@ -18,13 +18,10 @@ import {HeaderComponent} from "./shared/layout/header/header.component";
     HeaderComponent,
     AppComponent,
   ],
-  imports: [
+  imports: [  // модули, подключаемые по ленивой загрузке убираем из импортов
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    ProductsModule,
-    HomeModule,
-    OrderModule,
     CoreModule,
     SharedModule,
     AppRoutingModule,  // AppRoutingModule должен быть подключен позже остальных модулей

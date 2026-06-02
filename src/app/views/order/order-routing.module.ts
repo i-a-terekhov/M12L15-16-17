@@ -4,7 +4,7 @@ import {AuthGuard} from "../../core/auth/auth.guard";
 import {OrderComponent} from "./order.component";
 
 const routes: Routes = [
-  { path: 'order', component: OrderComponent, canActivate: [AuthGuard] },
+  { path: '', component: OrderComponent, canActivate: [AuthGuard] },  // оставили путь как '', т.к. теперь путь указывается в app-routing.module
 ];
 
 @NgModule({
