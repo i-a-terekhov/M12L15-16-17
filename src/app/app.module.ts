@@ -5,18 +5,17 @@ import { AppComponent } from './app.component';
 import { FormsModule } from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {CoreModule} from "./core/core.module";
-import {ProductsModule} from "./views/products/products.module";
-import {HomeModule} from "./views/home/home.module";
-import {OrderModule} from "./views/order/order.module";
 import {SharedModule} from "./shared/shared.module";
 import {FooterComponent} from "./shared/layout/footer/footer.component";
 import {HeaderComponent} from "./shared/layout/header/header.component";
+import { LayoutComponent } from './views/layout.component';
 
 @NgModule({
   declarations: [
     FooterComponent,
     HeaderComponent,
     AppComponent,
+    LayoutComponent,
   ],
   imports: [  // модули, подключаемые по ленивой загрузке убираем из импортов
     BrowserModule,
