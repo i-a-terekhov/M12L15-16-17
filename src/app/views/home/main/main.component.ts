@@ -1,7 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {CartService} from "../../../shared/services/cart.service";
 import {from, map, Observable, Subject, Subscription} from "rxjs";
-import * as bootstrap from "bootstrap";  // тайпинги позволяют импортировать bootstrap нативно
 
 @Component({
   selector: 'app-main',
@@ -53,8 +52,8 @@ export class MainComponent implements OnInit, OnDestroy {
   private subscription: Subscription | null = null;
 
   ngOnInit() {
-    const myModalAlternative = new bootstrap.Modal('#myModal', {});
-    myModalAlternative.show();
+    // const myModalAlternative = new bootstrap.Modal('#myModal', {});
+    // myModalAlternative.show();
 
     this.subscription = this.subject        // у subject такой же принцип работы подписки, что и у observable
       .subscribe(
