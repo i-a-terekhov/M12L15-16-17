@@ -31,11 +31,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/lib/bootstrap/bootstrap.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.scss"
             ],
             "scripts": [
-              "src/assets/lib/bootstrap/bootstrap.js"
+              "node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           },
           "configurations": {
