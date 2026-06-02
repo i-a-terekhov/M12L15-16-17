@@ -1,8 +1,7 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {CartService} from "../../../shared/services/cart.service";
 import {from, map, Observable, Subject, Subscription} from "rxjs";
-
-declare var bootstrap: any; // декларирование переменной bootstrap для обхода ограничений TS
+import * as bootstrap from "bootstrap";  // тайпинги позволяют импортировать bootstrap нативно
 
 @Component({
   selector: 'app-main',
