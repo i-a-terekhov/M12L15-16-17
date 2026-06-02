@@ -1,4 +1,4 @@
-import {Component, ElementRef, OnDestroy, OnInit, TemplateRef} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, OnDestroy, OnInit, TemplateRef, ViewChild} from '@angular/core';
 import {CartService} from "../../../shared/services/cart.service";
 import {from, map, Observable, Subject, Subscription} from "rxjs";
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
@@ -8,7 +8,7 @@ import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
-export class MainComponent implements OnInit, OnDestroy {
+export class MainComponent implements OnInit, OnDestroy, AfterViewInit {
   // private observable: Observable<number>;
   private subject: Subject<number>
 
@@ -50,8 +50,10 @@ export class MainComponent implements OnInit, OnDestroy {
 
   private subscription: Subscription | null = null;
 
-  ngOnInit() {
+  @ViewChild('popup')
+  popup!: TemplateRef<ElementRef>;
 
+  ngOnInit() {
     // const myModalAlternative = new bootstrap.Modal('#myModal', {});
     // myModalAlternative.show();
 
@@ -68,12 +70,16 @@ export class MainComponent implements OnInit, OnDestroy {
       );
   }
 
+  ngAfterViewInit() {
+    this.modalService.open(this.popup, {})
+
+  }
+
   ngOnDestroy() {
     this.subscription?.unsubscribe();  // отписка в subject такая же, как в observable
   }
 
-  test(popup: TemplateRef<ElementRef>) {
-    this.modalService.open(popup, {})
+  test() {
 
     this.subject
       .pipe(
