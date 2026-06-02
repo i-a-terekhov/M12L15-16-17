@@ -17,13 +17,13 @@ import { LayoutComponent } from './views/layout.component';
     AppComponent,
     LayoutComponent,
   ],
-  imports: [  // модули, подключаемые по ленивой загрузке убираем из импортов
+  imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
     CoreModule,
     SharedModule,
-    AppRoutingModule,  // AppRoutingModule должен быть подключен позже остальных модулей
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
