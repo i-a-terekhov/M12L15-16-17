@@ -1,3 +1,4 @@
+import { TuiRootModule } from "@taiga-ui/core";
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -33,8 +34,8 @@ import {MatButtonModule} from "@angular/material/button";
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
-    // NgbModule,
-  ],
+      TuiRootModule
+],
   providers: [],
   bootstrap: [AppComponent]
 })
