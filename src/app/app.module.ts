@@ -9,6 +9,7 @@ import {SharedModule} from "./shared/shared.module";
 import {FooterComponent} from "./shared/layout/footer/footer.component";
 import {HeaderComponent} from "./shared/layout/header/header.component";
 import { LayoutComponent } from './views/layout.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -25,6 +26,7 @@ import { LayoutComponent } from './views/layout.component';
     CoreModule,
     SharedModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     // NgbModule,
   ],
   providers: [],
