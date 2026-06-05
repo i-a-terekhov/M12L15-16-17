@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "http": "http-server dist/m12-l15"
+    "http": "http-server dist/m12-l15",
+    "build-fb": "ng build --output-path docs --base-href /M12L15-16-17/"
   },
   "private": true,
   "dependencies": {
