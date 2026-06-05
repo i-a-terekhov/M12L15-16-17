@@ -3,6 +3,7 @@ import {CartService} from "../../../shared/services/cart.service";
 import {from, map, Observable, Subject, Subscription} from "rxjs";
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 import {PopupComponent} from "../../../shared/components/popup/popup.component";
+import {environment} from "../../../../environments/environment";
 
 @Component({
   selector: 'app-main',
@@ -53,6 +54,8 @@ export class MainComponent implements OnInit, OnDestroy, AfterViewInit {
   private subscription: Subscription | null = null;
 
   ngOnInit() {
+
+    console.log("ЗНАЧЕНИЕ environment.production:", environment.production);
     // const myModalAlternative = new bootstrap.Modal('#myModal', {});
     // myModalAlternative.show();
 
